@@ -1,0 +1,40 @@
+@startuml
+!include theme.puml
+
+agent Application #f8c492
+note right
+	* Build
+	* Unit Test
+	* Run
+	* Configure
+	* Discover
+	* Topology
+	* Update
+	* Health
+	* Compliance
+end note
+agent "Operating System" as OS #f8c492
+note right
+	* Running Applications
+	* Time
+	* AAA
+	* Remote Access
+	* Hardening
+	* Patching
+	* Compliance
+end note
+agent Compute #f8c492
+note right
+	* OS Lifecycle
+	* Machine sizing
+end note
+agent Network #f8c492
+note left
+	* Routing
+	* IP Assignment
+end note
+
+Application <-- OS 
+OS <-- Compute
+OS <-- Network
+@enduml

@@ -1,0 +1,16 @@
+@startuml
+!include theme.puml
+
+title Functions as a Service
+
+skinparam nodesep 250
+
+frame "Application" {
+    agent "Function A" as FA 
+    agent "Function B" as FB
+    agent Network
+}
+
+FA <-- Network 
+FB <-- Network
+@enduml

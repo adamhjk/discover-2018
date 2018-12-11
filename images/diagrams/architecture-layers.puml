@@ -1,0 +1,20 @@
+@startuml
+!include theme.puml
+
+agent "Infrastructure Layer" as Infrastructure
+agent "User Interface Layer" as UI
+agent "Application Layer" as Application
+agent "Domain Layer" as Domain
+
+Infrastructure --> UI
+Infrastructure --> Application
+Infrastructure --> Domain
+UI --> Application
+Application --> Domain
+
+title
+    Abtractions should not depend upon details.
+    Details should depend on abstractions.
+end title
+
+@enduml

@@ -1,0 +1,83 @@
+@startuml
+skinparam backgroundColor #434343
+skinparam defaultFontName Avenir
+skinparam defaultFontColor #FFFFFF
+skinparam defaultFontSize 26 
+skinparam ArrowColor #ef9600
+skinparam ArrowFontSize 22
+
+skinparam SequenceLifeLineBorderColor DeepSkyBlue
+skinparam SequenceLifeLineBackgroundColor DeepSkyBlue
+
+skinparam ActorBackgroundColor #92c1e9
+skinparam ActorBorderColor #edeff0
+
+skinparam ParticipantBackgroundColor #92c1e9
+skinparam ParticipantBorderColor #edeff0
+skinparam ParticipantFontColor #2f3e4b
+
+skinparam NoteBackgroundColor #2f3e4b
+skinparam NoteBorderColor #edeff0
+skinparam NoteFontSize 20
+
+skinparam CloudBackgroundColor #92c1e9
+skinparam CloudBorderColor #edeff0
+skinparam CloudFontColor #2f3e4b
+
+skinparam NodeBackgroundColor #92c1e9
+skinparam NodeBorderColor #edeff0
+skinparam NodeFontColor #2f3e4b
+
+skinparam AgentBackgroundColor #92c1e9
+skinparam AgentBorderColor #edeff0
+skinparam AgentFontColor #2f3e4b
+skinparam AgentFontName "Avenir Bold"
+
+skinparam FrameBackgroundColor #2f3e4b
+skinparam FrameBorderColor #edeff0
+
+agent Application
+note right
+    * Build
+    * Unit Test
+    * Run
+    * Configure
+    * Discover
+    * Topology
+    * Update
+    * Health
+    * Compliance
+end note
+agent "Operating System" as OS
+note right
+    * Applications
+    * Networking
+    * Mounts
+    * Time
+    * Authentication
+    * Authorization
+    * Remote Access
+    * Hardening
+    * Patching
+    * Tidying
+    * Compliance
+end note
+agent Compute
+note left
+    * OS Lifecycle
+    * Machine sizing
+end note
+agent Storage
+agent Network
+note right
+    * Routing
+    * IP Address Assignment
+end note
+
+Application -- OS 
+OS -- Compute
+OS - Storage
+OS - Network
+Compute - Storage
+Storage - Network
+@enduml

@@ -1,0 +1,21 @@
+@startuml
+!include theme.puml
+
+database Depot
+frame Habitat {
+	agent "Application" as app
+}
+frame "Chef + Habitat" {
+	agent "Operating System" as RedHat
+}
+node "Compute" 
+cloud "Network"
+database "Storage"
+
+app -> Depot
+RedHat -> Depot
+Depot <-- Compute : \tDeploys application\n \tand operating system
+
+Compute	<-- Network
+Compute <-- Storage
+@enduml

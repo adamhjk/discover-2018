@@ -1,0 +1,630 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/chefconf-2018.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/solarized-light.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+		<script type="text/javascript" src="//fast.fonts.net/jsapi/2eb69eac-ab69-4627-978f-31e0a9f079cb.js"></script>
+	</head>
+
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-background="images/alankay.jpg">
+					<!-- https://flic.kr/p/jotNGd -->
+					<div class="see-through fragment">
+						<blockquote>Perspective is worth 80 IQ points</blockquote>
+						<h3>Alan Kay</h3>
+					</div>
+					<aside class="notes">
+						<h1>Hello</h1>
+						<h1>my friend Alan Kay</h1>
+						<h1>OO, Smalltalk, GUIs, Tablets</h1>
+						<h1>Perspective; how ent breaks out</h1>
+						<h1>My own</h1>
+					</aside>
+				</section>
+
+
+				<section data-background-image="images/perspective.jpg">
+					<!-- https://flic.kr/p/4zTPnz -->
+					<div class="see-through">
+						<h1>24 years</h1>
+						<hr class="fragment" data-fragment-index="1">
+						<h1 class="orange fragment" data-fragment-index="1">10 years</h1>
+					</div>
+
+					<aside class="notes">
+						<h1>SA 24</h1>
+						<h1>10 Chef</h1>
+						<h1>World</h1>
+						<h1>breakout into digital natives; back</h1>
+					</aside>
+				</section>
+
+				<section data-background-color="#edeff0">
+					<img src="images/opscode-logo.png">
+					<aside class="notes">
+						<h1>before almost anyone had ever seen chef</h1>
+						<h1>To when we were Opscode</h1>
+						<h1>stock market at 6700; there is no money flowing</h1>
+						<h1>And talk about what we believed then</h1>
+						<h1>and what better way to do that than to use our original pitch deck?</h1>
+						<h1>And who better to pitch you, then my co-founder and our founding CEO, Jesse Robbins</h1>
+					</aside>
+				</section>
+
+				<section>
+					<img src="images/OpsCode-Page-1.png">
+					<aside class="notes">
+						<h1>One: good with colors</h1>
+						<h2>Two: ops nerds, we put a plus in front of his number</h2>
+						<h2>Three: 16x9 hadn't been invented yet! Still 4:3 everywhere</h2>
+					</aside>
+				</section>
+
+				<section>
+					<img src="images/OpsCode-Page-2.png">
+				</section>
+
+				<section>
+					<img src="images/OpsCode-Page-3.png">
+						<aside class="notes">
+							<h1>Only one still owes us money</h1>
+						</aside>
+				</section>
+
+				<section>
+					<img src="images/OpsCode-Page-4.png">
+						<aside class="notes">
+							<h1>We were smart</h1>
+						</aside>
+				</section>
+
+				<section>
+					<img src="images/OpsCode-Page-5.png">
+						<aside class="notes">
+							<h1>DevOps before it was cool</h1>
+							<h1>Nailed it!</h1>
+						</aside>
+				</section>
+
+				<section>
+					<img src="images/OpsCode-Page-6.png">
+						<aside class="notes">
+							<h1>Totally true, but 10 years too early</h1>
+							<h1>All y'all made us sell you software instead</h1>
+						</aside>
+				</section>
+
+				<section>
+					<img src="images/OpsCode-Page-7.png">
+						<aside class="notes">
+							<h1>Check to all that</h1>
+						</aside>
+				</section>
+
+				<section>
+					<img src="images/OpsCode-Page-8.png">
+				</section>
+
+				<section>
+					<img src="images/OpsCode-Page-9.png">
+				</section>
+
+				<section>
+					<img src="images/OpsCode-Page-10.png">
+				</section>
+
+				<section>
+					<img src="images/OpsCode-Page-11.png">
+				</section>
+
+				<section>
+					<img src="images/OpsCode-Page-12.png">
+						<aside class="notes">
+							<h1>The first of many missed dates</h1>
+							<h1>Continuous delivery before it was cool!</h1>
+						</aside>
+				</section>
+
+				<section>
+					<img src="images/OpsCode-Page-13.png">
+						<aside class="notes">
+							<h1>We raised 2.5mm from DFJ</h1>
+							<h1>This was the presentation we gave to their partners</h1>
+							<h1>Thank you, Jesse Robbins, everyone</h1>
+						</aside>
+				</section>
+
+				<section data-background-image="images/opscode-lessons.jpg">
+					<!-- https://flic.kr/p/24raHeD -->
+					<div class="see-through">
+					<blockquote>
+					Take what worked at the big web and do it everywhere else!
+					</blockquote>
+					<h3>Adam and Jesse</h3>
+					</div>
+					<aside class="notes">
+					  <h1>Sound familiar?</h1>
+					  <h1>Barry called the big web the "FAANG" companies</h1>
+					</aside>
+				</section>
+
+				<!-- 
+
+				<section>
+					<img src="images/diagrams/og-perspective.png" width="600px">
+					<aside class="notes">
+					  <h1>We built a flexible platform that saw the world as mostly infrastructure, tiny app</h1>
+					  <h1>We figured it would become a universal abstraction</h1>
+					  <h1>Hint: there isn't a universal abstracton thats valuable</h1>
+					  <h1>we dive up and down for a reason</h1>
+					</aside>
+				</section>
+				-->
+
+				<section data-background-image="images/understand.jpg">
+					<!-- https://flic.kr/p/em3squ -->
+					<div class="see-through fragment">
+						<h3 class="orange">Which parts of the big web are important</h3>
+					</div>
+					<aside class="notes">
+						<h1>With a decade of perspective, I would like to share them with you</h1>
+					</aside>
+				</section>
+
+				<section data-background-image="images/contract.jpg">
+					<!-- https://flic.kr/p/nY1p1y -->
+					<div class="see-through fragment">
+						<h1>Standardize the contracts between layers</h1>
+					</div>
+				</section>
+
+				<section data-background-image="images/diagrams/architecture-layers.png" data-background-size="contain">
+					<aside class="notes">
+						<h1>Grandfather</h1>
+						<h1>Abtractions/Details Quote</h1>
+						<h1>Layers above depend only on the layers below</h1>
+						<h1>Decoupling</h1>
+						<h1>Apply to systems?</h1>
+					</aside>
+				</section>
+
+				<section data-background-image="images/diagrams/inverted-layers.png" data-background-size="contain">
+					<aside class="notes">
+						<h1>Network touches all</h1>
+						<h1>Storage, Compute easy to think about</h1>
+						<h1>Operating systems rely on compute and storage</h1>
+						<h1>Applications rely on all of hte above</h1>
+						<h1>Those details depend on abstractions - so what might those abstractions be?</h1>
+					</aside>
+				</section>
+
+				<section data-background-image="images/diagrams/layers.png" data-background-size="contain">
+					<aside class="notes">
+						<h1>Networks will deliver traffic; IP</h1>
+						<h1>Operating Systems</h1>
+						<h1>Applications</h1>
+						<h1>But we didn't have the perspective to do this first; instead, we went like this</h1>
+					</aside>
+				</section>
+
+				<section data-background-image="images/diagrams/traditional.png" data-background-size="contain">
+					<aside class="notes">
+						<h1>Essentially unspecified</h1>
+						<h1>We built org structures rather than contract</h1>
+						<h1>system is essentially ad-hoc; held together by fear and uncertainty</h1>
+					</aside>
+				</section>
+
+				<section data-background-image="images/diagrams/iaas.png" data-background-size="contain">
+					<aside class="notes">
+						<h1>Then EC2 comes along, IaaS</h1>
+						<h1>Suddenly compute and network have abstractions</h1>
+						<h1>We run the OS you tell us</h1>
+						<h1>Done</h1>
+					</aside>
+				</section>
+
+				<section data-background-image="images/diagrams/iaas-two.png" data-background-size="contain">
+					<aside class="notes">
+						<h1>But the operating system was basically still ad-hoc</h1>
+						<h1>And the applications too</h1>
+						<h1>In fact, we tended to still smoosh them together</h1>
+						<h1>Chef was built for this - still the best!</h1>
+					</aside>
+				</section>
+
+				<section data-background-image="images/diagrams/paas.png" data-background-size="contain">
+					<aside class="notes">
+						<h1>Here we decided everything was pushed under the hood</h1>
+						<h1>But we made a mistake; the application must be aware of the platform constraints, not vice versa</h1>
+						<h1>Anything you want, if its stateless and 12 factor</h1>
+					</aside>
+				</section>
+
+				<section data-background-image="images/diagrams/caas.png" data-background-size="contain">
+					<aside class="notes">
+						<h1>So we backed off, and said how about you fix the IaaS problem</h1>
+						<h1>By pushing the os and app together</h1>
+						<h1>And then just running *that* as the unit</h1>
+					</aside>
+				</section>
+
+				<section data-background-image="images/diagrams/caas-two.png" data-background-size="contain">
+					<aside class="notes">
+						<h1>But then we needed a way to run those as complex systems</h1>
+						<h1>So we build containers as a service</h1>
+						<h1>And moved the application definition into a single infrastructure layer manifest</h1>
+						<h1>This is much better</h1>
+						<h1>But we're still under-specifying the application</h1>
+						<h1>Literally exactly like we did before</h1>
+					</aside>
+				</section>
+
+				<section data-background-image="images/diagrams/serverless.png" data-background-size="contain">
+					<aside class="notes">
+						<h1>Serverless takes this a step further</h1>
+						<h1>We only care about functions and the network</h1>
+						<h1>How the data gets delivered becomes abstract details</h1>
+						<h1>There is value in each of these evolutions, but we're missing a key thing</h1>
+					</aside>
+				</section>
+
+				<section data-background-image="images/diagrams/standards-final.png" data-background-size="contain">
+					<aside class="notes">
+						<h1>What are the contracts?</h1>
+						<h1>If this was working, all these would be possible</h1>
+						<h1>Because we could specify the contracts, and meet them</h1>
+						<h1>The serverless app example</h1>
+						<h1>Here is another, for managing operating systems</h1>
+					</aside>
+				</section>
+
+				<section>
+					<pre>
+					<code>
+						name "base"
+						run_list [
+							"auth::default",
+							"mounts::default",
+							"networking::default",
+							"remote_access::default",
+							"time::default",
+							"hardening::default",
+							"tuning::default",
+							"applications::default",
+							"compliance::default",
+							"patching::default"
+						]
+						named_run_list "bootstrap", "bootstrap::default"
+					</code>
+					</pre>
+					<aside class="notes">
+						<h1>What Facebook was telling us</h1>
+						<h1>Strong layers between OS and Application</h1>
+					</aside>
+				</section>
+
+				<section data-background-image="images/contract.jpg">
+					<div class="see-through">
+					<h1>Standardize the contracts between layers</h1>
+					</div>
+					<aside class="notes">
+						<h1>If we focus on the abstraction, rather than the details</h1>
+						<h1>We future proof ourselves; and we give ourselves a time machine back for our legacy</h1>
+						<h1>This is what habitat does for applications!</h1>
+						<h1>It's why we're having so much success with legacy applications</h1>
+						<h1>And with tiny microservices</h1>
+					</aside>
+				</section>
+
+				<section data-background-image="images/streamline.jpg">
+					<!-- https://flic.kr/p/KaX6JB -->
+					<div class="see-through fragment">
+						<h1>Streamline the Delivery Path</h1>
+					</div>
+					<aside class="notes">
+						<h1>If we standardize the layers</h1>
+						<h1>We now need a streamlined way to deliver them</h1>
+						<h1>One path vs thousand paths</h1>
+					</aside>
+				</section>
+
+				<section data-background-image="images/diagrams/pipeline.png" data-background-size="contain">
+					<aside class="notes">
+						<h1>Alice, Susan, Elizabeth, Dollars</h1>
+						<h1>How many of you work like this?</h1>
+					</aside>
+				</section>
+
+				<section data-background-image="images/diagrams/pipeline-artifact-span.png" data-background-transition="slide" data-background-size="contain">
+					<aside class="notes">
+						<h1>What you build must work across the pipeline</h1>
+						<h1>Immutability</h1>
+						<h1>3 kinds of dynamic config (config, topology, discovery)</h1>
+						<h1>Without it, we push complexity back into the pipelines</h1>
+					</aside>
+				</section>
+
+				<section data-background-image="images/diagrams/pipeline-atomic-channels.png" data-background-transition="slide" data-background-size="contain">
+					<aside class="notes">
+						<h1>Each component, and their dependencies</h1>
+						<h1>So we know what you do in one stage is the same as later</h1>
+						<h1>Atomic channels are critical - if we can't do this, we can't scale</h1>
+						<h1>Again - without it, we push complexity back into the pipeline</h1>
+						<h1>Compromising our ability to have one path</h1>
+					</aside>
+				</section>
+
+				<section data-background-image="images/diagrams/pipeline-overlay.png" data-background-transition="slide" data-background-size="contain">
+					<aside class="notes">
+						<h1>Does't matter when this was</h1>
+						<h1>Adapt to new technology</h1>
+						<h1>Use the abstractions to make the details work</h1>
+						<h1>The pipeline is the guide for how to put them together</h1>
+						<h1>Habitat</h1>
+						<h1>Operating systems</h1>
+						<h1>Serverless</h1>
+					</aside>
+				</section>
+
+				<section data-background-image="images/apples-oranges.jpg">
+					<!-- https://flic.kr/p/kc4YDa -->
+					<div class="see-through fragment">
+						<h1>Technology companies first, not second</h1>
+					</div>
+					<aside class="notes">
+						<h1>Shift gears a little; to the more human side of things</h1>
+						<h1>The enterprise thinks they are banks, retails, or whatever first who use technology</h1>
+						<h1>The business limits technology in the old model</h1>
+						<h1>We are a bank, therefore we limit technology in the following ways</h1>
+						<h1>Google is a technology company that sells advertising</h1>
+						<h1>We should be technology companies that deliver banking services</h1>
+						<h1>Think about the perspective on technology - there is no question it has to be good</h1>
+						<h1>When faced with a problem, it's a technology problem by definition</h1>
+						<h1>Regulation, compliance, limitations - all technology problems first</h1>
+					</aside>
+				</section>
+
+				<section data-background-image="images/storymap.jpg">
+					<!-- https://flic.kr/p/kc4YDa -->
+					<div class="see-through fragment">
+						<h1>Approach technology as a product</h1>
+					</div>
+					<aside class="notes">
+						<h1>We need to deliver these projects as products themselves</h1>
+						<h1>That means delivering end to end quickly</h1>
+						<h1>An iteration means you complete the work</h1>
+						<h1>We rebuilt the core operating system platform in 8 days</h1>
+						<h1>They'll iterate for a long time</h1>
+					</aside>
+				</section>
+
+				<section data-background-image="images/bike.jpg">
+					<!-- https://flic.kr/p/kc4YDa -->
+					<aside class="notes">
+						<h1>My daughter, learning to ride a bike</h1>
+						<h1>Power of perspective - bike guy; about balane</h1>
+						<h1>Get to the important part fast</h1>
+						<h1>Teaches you how it feels, then what to do next</h1>
+						<h1>It's the best anecdote for whats next</h1>
+					</aside>
+				</section>
+
+				<section data-background-image="images/cumberland-gap.jpg">
+					<!-- https://flic.kr/p/UF5otb -->
+						<h1 class="fragment">Confidence Gap</h1>
+						<aside class="notes">
+							<h1>The confidence gap</h1>
+							<h1>I think it's at the root of all your troubles</h1>
+							<h1>Literally every one of you that works in the enterprise started a meeting with me with an apology for how awful you are</h1>
+							<h1>Stark example</h1>
+						</aside>
+				</section>
+
+				<section data-background="images/jamie.jpg">
+						<aside class="notes">
+							<h1>Here is jamie winsor</h1>
+							<h1>Table, line of sysadmins, he says they are too stupid to program</h1>
+							<h1>I get mad, correct him, Jamie quits soon there after</h1>
+						</aside>
+				</section>
+
+				<section data-background="images/legacy.jpg">
+					<!-- https://flic.kr/p/8p7gJ2 -->
+					<div class="fragment see-through">
+					<blockquote>
+						They don't have legacy software like us
+					</blockquote>
+					<h3>The Enterprise</h3>
+					</div>
+					<aside class="notes">
+						<h1>Of course they do</h1>
+						<h1>Google founded in 1998</h1>
+						<h1>Netflix in 1997 used to mail you DVDs, for gods sake</h1>
+						<h1>Do you count your systems deployed in 1998 as legacy?</h1>
+						<h1>What they don't do? Call it legacy software. They call it google.</h1>
+						<h1>It's an execuse, and you use it to justify your lack of confidence</h1>
+					</aside>
+				</section>
+
+				<section data-background="images/money.jpg">
+					<!-- https://flic.kr/p/fxrQuH -->
+					<div class="fragment see-through">
+						<blockquote>
+							They have more resources than we do
+						</blockquote>
+						<h3>The Enterprise</h3>
+					</div>
+					<aside class='notes'>
+						<h1>Citibank - who has been working to transform for years, doing good work</h1>
+						<h1>173.62B in cash on money on hand</h1>
+						<h1>Alphabet - 12.6 billion</h1>
+						<h1>Admittedly, and extreme example</h1>
+						<h1>You're the largest, most accomplished companies on the planet</h1>
+						<h1>I'm not saying you can spend your way out</h1>
+						<h1>But it's not a resource problem</h1>
+					</aside>
+				</section>
+
+				<section data-background="images/regulator.jpg">
+					<!-- https://flic.kr/p/dE3a3a -->
+					<div class="fragment see-through">
+						<blockquote>
+							They don't have the regulatory burden we do
+						</blockquote>
+						<h3>The Enterprise</h3>
+					</div>
+					<aside class='notes'>
+						<h1>You saw yesterday all the industries Amazon is in</h1>
+						<h1>SOX? HIPPA? PCI? GDPR? Check.</h1>
+						<h1>Sure, if you're Citi, Amazon doesn't run a bank (yet - god help them)</h1>
+					</aside>
+				</section>
+
+				<section data-background="images/difference.jpg">
+					<!-- https://flic.kr/p/EMqrWR -->
+					<div class="fragment see-through" data-fragment-index="1">
+						<span class="fragment" data-fragment-index="1">You are tech companies first</span>
+						<hr class="fragment" data-fragment-index="2">
+						<span class="fragment" data-fragment-index="2">You are the best</span>
+					</div>
+					<aside class="notes">
+						<h1>What do you think I do with your teams?</h1>
+						<h1>It's not magic. I just remind you who you are.</h1>
+						<h1>I love my friends at facebook, buyt they don't need a reminder</h1>
+					</aside>
+				</section>
+
+				<section data-background="images/trapped.jpg">
+					<!-- https://flic.kr/p/e8cb9E -->
+					<div class="fragment see-through" data-fragment-index="1">
+								I/my people can't because (too stupid)
+					</div>
+
+					<aside class="notes">
+						<h1>What are the warning signs you're stuck here</h1>
+					</aside>
+				</section>
+
+				<section data-background="images/trapped.jpg">
+					<!-- https://flic.kr/p/e8cb9E -->
+					<div class="see-through">
+								We can't because "they" won't
+					</div>
+					<aside class="notes">
+						<h1>DHCP story</h1>
+						<h1>They won't let us</h1>
+						<h1>You hold each other back</h1>
+					</aside>
+				</section>
+
+				<section data-background="images/trapped.jpg">
+					<!-- https://flic.kr/p/e8cb9E -->
+					<div class="see-through">
+						Strategic Overconfidence
+					</div>
+					<aside class="notes">
+						<h1>Technology adoption avoids fixing the root</h1>
+						<h1>Chef will obviate the need to solve things; just write code</h1>
+						<h1>You can tell because it avoids the previous conccersation</h1>
+						<h1>It won't matter because X</h1>
+					</aside>
+				</section>
+
+				<section data-background="images/trapped.jpg">
+					<!-- https://flic.kr/p/e8cb9E -->
+					<div class="see-through fragment">
+								Vocabulary Theft
+					</div>
+					<aside class="notes">
+						<h1>Richard cook - lunch, how systems fail</h1>
+						<h1>This is when peoplde steal vocabulary and wash what they are doing with it</h1>
+						<h1>We've never done it (see product) </h1>
+						<h1>wears you down; you stop trusting change is possible</h1>
+					</aside>
+				</section>
+
+				<section data-background="images/specialty.jpg">
+					<!-- https://flic.kr/p/7cCWYt -->
+					<aside class="notes">
+						<h1>In some ways I'm the like the teacher that taught my daughter to ride</h1>
+						<h1>I have all this perspective, but I don't have the most important part</h1>
+						<h1>You know your business</h1>
+						<h1>When it comes to doing the work, it's got to be you</h1>
+						<h1>Otherwise, its just more strategic overconfidence</h1>
+						<h1>On a grand stage</h1>
+					</aside>
+				</section>
+
+				<section data-background="images/teamwork.jpg">
+					<!-- https://flic.kr/p/qrKwxt -->
+
+					<aside class="notes">
+						<h1>Work together</h1>
+						<h1>To define those layers</h1>
+						<h1>To streamline that delivery process</h1>
+						<h1>To overcome the confidence gap together</h1>
+					</aside>
+				</section>
+
+				<section data-background="images/commitment.jpg">
+					<!-- https://flic.kr/p/dUgzic -->
+					<aside class="notes">
+						<h1>My committment is I'll be out there with you</h1>
+						<h1>Learning from you, growing with you</h1>
+						<h1>Can't wait for Google to be asking you how you do it</h1>
+						<h1>Thank you so much, and I can't wait to build the future with you</h1>
+					</aside>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+				controls: false,
+				progress: false,
+				touch: true,
+				slideNumber: true,
+				keyboard: {
+					66: null,
+					72: null,
+					76: null,
+					78: null,
+				},
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+
+		</script>
+	</body>
+</html>

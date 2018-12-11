@@ -1,0 +1,33 @@
+@startuml
+!include theme.puml
+
+actor Alice
+collections "Source Control" as Source
+actor Susan
+collections Build
+collections Acceptance
+actor Elizabeth
+collections Staging 
+collections "Pre-Prod" as Preprod
+collections Production
+actor "$$$" as dollars
+
+Alice <- Source : Checkout Project
+Alice <- Alice : Build/Test Software
+Alice -> Source : Submit Change
+Source -> Source : Build/Test Software
+Susan -> Source : Approve Change
+Source -> Build : Create Artifact
+Build -> Acceptance : Update Channel
+Acceptance -> Acceptance : Deploy
+dollars -> Acceptance : Check out the dope feature
+dollars -> Elizabeth : I love it
+Elizabeth -> Acceptance : Ship it!
+Acceptance -> Staging : Update Channel
+Staging -> Staging : Deploy
+Staging -> Preprod : Update Channel
+Preprod -> Preprod : Deploy
+Preprod -> Production : Update Channel
+Production -> Production : Deploy
+dollars -> Production : Be Stoked
+@enduml

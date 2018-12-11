@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'Avenir Next';
+    src: url('Avenir-Next-LT-Pro_5196.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir Next Bold';
+    src: url('Avenir-Next-LT-Pro-Bold_5182.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+

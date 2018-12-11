@@ -1,0 +1,18 @@
+@startuml
+!include theme.puml
+
+title Infrastructure as a Service
+skinparam nodesep 250
+
+agent Application #f8c492
+agent "Operating System" as OS #f8c492
+
+frame EC2 {
+    agent Compute
+    agent Network
+}
+
+Application <-- OS 
+OS <-- Compute
+OS <-- Network
+@enduml

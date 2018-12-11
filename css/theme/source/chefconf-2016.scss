@@ -1,0 +1,184 @@
+/**
+ * ChefConf 2016 theme for reveal.js.
+ *
+ * Derived from "Black" By Hakim El Hattab, http://hakim.se
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+
+// Include theme-specific fonts
+@import url(../../lib/font/source-sans-pro/source-sans-pro.css);
+
+// Override theme settings (see ../template/settings.scss)
+$backgroundColor: #2f3e4b;
+
+$mainColor: #FFFFF8;
+$headingColor: #FFFFF8;
+
+$mainFontSize: 38px;
+$mainFont: 'Helvetica', 'Source Sans Pro', Helvetica, sans-serif;
+$headingFont: 'Helvetica', 'Source Sans Pro', Helvetica, sans-serif;
+$headingTextShadow: none;
+$headingLetterSpacing: normal;
+$headingTextTransform: normal;
+$headingFontWeight: 600;
+$linkColor: #e2dd29;
+$linkColorHover: lighten( $linkColor, 15% );
+$selectionBackgroundColor: lighten( $linkColor, 25% );
+
+$heading1Size: 2.5em;
+$heading2Size: 1.6em;
+$heading3Size: 1.3em;
+$heading4Size: 1.0em;
+
+section.has-light-background {
+	&, h1, h2, h3, h4, h5, h6 {
+		color: #fff;
+	}
+}
+
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
+
+.reveal h2 {
+  color: #f0892d;
+}
+
+.reveal h3 {
+  color: #7da2c3;
+}
+
+.reveal .dark-background {
+  background-color: #2f3e4b;
+}
+
+.reveal .dark-blue {
+  color: #2f3e4b;
+}
+
+.reveal .yellow {
+  color: #32dd29;
+}
+
+.reveal .orange {
+  color: #f0892d;
+}
+
+.reveal .light-blue {
+  color: #7da2c3;
+}
+
+.reveal .light-yellow {
+  color: #f1ee85;
+}
+
+.reveal .beige {
+  color: #f8c492;
+}
+
+.reveal .baby-blue {
+  color: #bed1e1;
+}
+
+.reveal .shadow {
+  text-shadow: 0px 10px 10px #000;
+}
+
+.reveal div.white-see-through {
+  background-color: #ffffff;
+  opacity: 0.9;
+  padding: 20px;
+  border-radius: 30px;
+}
+
+.reveal div.see-through {
+  background-color: #3f5463;
+  opacity: 0.9;
+  padding: 20px;
+  border-radius: 30px;
+}
+
+.reveal div.solid {
+  background-color: #3f5463;
+  padding: 20px;
+  border-radius: 30px;
+}
+
+.reveal pre {
+	display: block;
+	position: relative;
+	width: 90%;
+	margin: $blockMargin auto;
+	text-align: left;
+	font-size: 0.55em;
+	font-family: monospace;
+	line-height: 1.2em;
+	word-wrap: break-word;
+	box-shadow: none;
+}
+.reveal code {
+	font-family: monospace;
+}
+
+.reveal pre code {
+	display: block;
+	padding: 5px;
+	overflow: auto;
+	max-height: 400px;
+	word-wrap: break-word;
+  font-family: "Source Sans Pro";
+  font-size: 16pt;
+}
+
+.reveal .slides section .fragment.highlight-yellow,
+.reveal .slides section .fragment.highlight-current-yellow {
+  opacity: 1;
+  visibility: visible;
+}
+
+.reveal .slides section .fragment.highlight-current-yellow.current-fragment {
+  background-color: #FFFF00;
+}
+
+.reveal iframe {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.reveal .split-screen {
+  width: 100%;
+  height: 300px;
+}
+
+.reveal .split-screen .left {
+  float: left;
+  width: 50%;
+  height: 100%;
+}
+
+.reveal .split-screen .left pre code {
+  font-size: 14pt;
+}
+
+.reveal .split-screen .right {
+  float: left;
+  width: 50%;
+  height: 100%;
+}
+
+.reveal section img {
+  background: none;
+  background-blend-mode: normal;
+}
+

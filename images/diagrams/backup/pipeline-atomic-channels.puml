@@ -1,0 +1,59 @@
+@startuml
+skinparam backgroundColor #434343
+skinparam defaultFontName Avenir
+skinparam defaultFontColor #FFFFFF
+skinparam defaultFontSize 26 
+skinparam ArrowColor #ef9600
+skinparam ArrowFontSize 22
+
+skinparam SequenceLifeLineBorderColor DeepSkyBlue
+skinparam SequenceLifeLineBackgroundColor DeepSkyBlue
+
+skinparam ActorBackgroundColor #92c1e9
+skinparam ActorBorderColor #edeff0
+
+skinparam ParticipantBackgroundColor #92c1e9
+skinparam ParticipantBorderColor #edeff0
+skinparam ParticipantFontColor #2f3e4b
+
+skinparam NoteBackgroundColor #2f3e4b
+skinparam NoteBorderColor #edeff0
+skinparam NoteFontSize 60
+
+actor Alice
+collections "Source Control" as Source
+actor Susan
+collections Build
+collections Acceptance
+actor Elizabeth
+collections Staging 
+collections "Pre-Prod" as Preprod
+collections Production
+actor "$$$" as dollars
+
+activate Acceptance
+activate Staging
+activate Preprod
+activate Production
+Alice <- Source : Checkout Project
+Alice <- Alice : Build/Test Software
+Alice -> Source : Submit Change
+Source -> Source : Build/Run Software
+Susan -> Source : Approve Change
+Source -> Build : Create Artifact
+Build -> Acceptance : Update Channel
+note over Acceptance, Production
+    Atomic Channels
+end note
+Acceptance -> Acceptance : Deploy
+dollars -> Acceptance : Check out the dope feature
+dollars -> Elizabeth : I love it
+Elizabeth -> Acceptance : Ship it!
+Acceptance -> Staging : Update Channel
+Staging -> Staging : Deploy
+Staging -> Preprod : Update Channel
+Preprod -> Preprod : Deploy
+Preprod -> Production : Update Channel
+Production -> Production : Deploy
+dollars -> Production : Be Stoked
+@enduml

@@ -1,0 +1,16 @@
+@startuml
+!include theme.puml
+
+title Traditional Infrastructure
+
+skinparam nodesep 250
+
+agent Application
+agent "Operating System" as OS
+agent Compute
+agent Network
+
+Application <-- OS 
+OS <-- Compute
+OS <-- Network
+@enduml

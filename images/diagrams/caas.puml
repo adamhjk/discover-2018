@@ -1,0 +1,20 @@
+@startuml
+!include theme.puml
+
+title Containers
+
+skinparam nodesep 250
+
+frame Container {
+    agent Application
+    agent "Operating System" as OSS
+}
+frame Runtime {
+    agent Compute
+    agent Network
+}
+
+Application <-- OSS 
+OSS <-- Compute
+OSS <-- Network
+@enduml

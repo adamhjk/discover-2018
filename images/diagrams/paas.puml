@@ -1,0 +1,18 @@
+@startuml
+!include theme.puml
+
+title Platform as a Service
+
+skinparam nodesep 250
+
+agent Application
+frame PaaS {
+    agent "Operating System" as OS
+    agent Compute
+    agent Network
+}
+
+Application <-- OS 
+OS <-- Compute
+OS <-- Network
+@enduml

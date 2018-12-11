@@ -1,0 +1,29 @@
+@startuml
+!include theme.puml
+
+title Containers as a Service
+
+skinparam nodesep 250
+
+frame "Distributed Application Definition" {
+frame "Container A" {
+    agent Application
+    agent "Operating System" as OSS
+}
+frame "Container B" {
+    agent Application as A2
+    agent "Operating System" as OSS2
+}
+frame Scheduler {
+    agent Compute
+    agent Network
+}
+}
+
+Application <-- OSS 
+A2 <-- OSS2
+OSS2 <-- Compute
+OSS2 <-- Network
+OSS <-- Compute
+OSS <-- Network
+@enduml

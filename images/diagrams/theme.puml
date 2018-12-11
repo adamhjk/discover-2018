@@ -1,0 +1,54 @@
+skinparam backgroundColor #434343
+skinparam defaultFontName Avenir
+skinparam defaultFontColor #FFFFFF
+skinparam defaultFontSize 26 
+skinparam ArrowColor #ef9600
+skinparam ArrowFontSize 22
+skinparam ArrowThickness 4
+
+skinparam SequenceLifeLineBorderColor DeepSkyBlue
+skinparam SequenceLifeLineBackgroundColor DeepSkyBlue
+skinparam SequenceLifeLineBorderThickness 4
+skinparam SequenceArrowThickness 4 
+skinparam SwimlaneBorderThickness 4
+
+skinparam ActorBackgroundColor #92c1e9
+skinparam ActorBorderColor #edeff0
+
+skinparam ParticipantBackgroundColor #92c1e9
+skinparam ParticipantBorderColor #edeff0
+skinparam ParticipantFontColor #2f3e4b
+
+skinparam CollectionsBackgroundColor #92c1e9
+skinparam CollectionsBorderColor #edeff0
+skinparam CollectionsFontColor #2f3e4b
+
+skinparam DatabaseBackgroundColor #92c1e9
+skinparam DatabaseBorderColor #edeff0
+skinparam DatabaseFontColor #2f3e4b
+
+
+skinparam NoteBackgroundColor #2f3e4b
+skinparam NoteBorderColor #edeff0
+skinparam NoteFontSize 20
+
+skinparam CloudBackgroundColor #92c1e9
+skinparam CloudBorderColor #edeff0
+skinparam CloudFontColor #2f3e4b
+
+skinparam NodeBackgroundColor #92c1e9
+skinparam NodeBorderColor #edeff0
+skinparam NodeFontColor #2f3e4b
+
+skinparam AgentBackgroundColor #92c1e9
+skinparam AgentBorderColor #edeff0
+skinparam AgentFontColor #2f3e4b
+skinparam AgentFontName "Avenir Bold"
+
+skinparam FrameBackgroundColor #2f3e4b
+skinparam FrameBorderColor #edeff0
+
+skinparam titleBorderRoundcorner 15
+skinparam titleBorderThickness 2
+skinparam titleBackgroundColor #2f3e4b
+skinparam titleBorderColor #edeff0

@@ -1,0 +1,22 @@
+@startuml
+!include theme.puml
+
+agent Network
+agent Storage
+agent Compute
+agent "Operating System" as OS
+agent Application
+
+Network --> Storage
+Network --> Compute
+Network --> OS
+Network --> Application
+Storage --> Compute
+Compute --> OS
+OS --> Application
+
+title
+    Abtractions should not depend upon details.
+    Details should depend on abstractions.
+end title
+@enduml
